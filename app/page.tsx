@@ -109,11 +109,11 @@ export default function Home() {
             style={{ borderColor: "rgba(255,255,255,0.04)" }}
           >
             <span className="font-mono tracking-[0.12em] text-white/20 uppercase">
-              SEC-CLEARANCE LEVEL-5 // GLOBAL OPERATIONS ACTIVE // MULTI-THEATRE COORDINATION
+              {"SEC-CLEARANCE LEVEL-5 // GLOBAL OPERATIONS ACTIVE // MULTI-THEATRE COORDINATION"}
             </span>
             <div className="flex items-center gap-3 font-mono text-white/15">
               <span>LAST SYNC <LiveSyncTime /> AGO</span>
-              <span className="text-white/10">//</span>
+              <span className="text-white/10">{"//"}</span>
               <span>© {new Date().getFullYear()} SENTINEL INTERNATIONAL</span>
             </div>
           </div>

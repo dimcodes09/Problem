@@ -94,7 +94,7 @@ export default function CommsHub() {
                 LIVE RADIO FEED
               </span>
               <span className="font-mono text-[10px] text-white/20 tracking-wider">
-                // AES-XTS 256 ENCRYPTED
+                {"// AES-XTS 256 ENCRYPTED"}
               </span>
             </div>
 

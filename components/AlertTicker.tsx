@@ -1,12 +1,10 @@
 "use client";
 
-import React, { useEffect, useRef } from "react";
+import React from "react";
 import { TICKER_ALERTS } from "../lib/mockData";
 
 export default function AlertTicker() {
-  const tickerRef = useRef<HTMLDivElement>(null);
-
-  const alertsString = TICKER_ALERTS.map((a, i) => {
+  const alertsString = TICKER_ALERTS.map((a) => {
     const isAlert = a.includes("CRITICAL");
     return `<span class="${isAlert ? "text-[#ff2e4c]" : "text-[#38bdf8]/70"} font-semibold mr-1">${isAlert ? "⬤" : "◆"}</span><span class="${isAlert ? "text-[#ff2e4c]/90" : "text-white/50"}">${a}</span>`;
   }).join(`<span class="mx-6 text-white/15">///</span>`);
